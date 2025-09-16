@@ -28,9 +28,7 @@ namespace Produktpris
 
 
 
-            double totalDefaultTax = CalculateTotal(product, price, quantity);
-            Console.WriteLine("Totalpris med default moms 25%: " + totalDefaultTax + " kr");
-
+            
 
 
         }
