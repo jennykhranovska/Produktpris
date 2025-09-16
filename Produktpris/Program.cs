@@ -5,7 +5,12 @@ namespace Produktpris
     internal class Program
     {
         static void Main(string[] args)
+
         {
+
+            Console.WriteLine("Detta är ett test!");
+
+
             Console.WriteLine("Ange produktens namn:");
             string product = Console.ReadLine();
 
@@ -28,6 +33,8 @@ namespace Produktpris
 
 
 
+            double totalDefaultTax = CalculateTotal(product, price, quantity);
+            Console.WriteLine("Totalpris med default moms 25%: " + totalDefaultTax + " kr");
 
 
 
