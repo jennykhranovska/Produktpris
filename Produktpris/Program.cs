@@ -27,13 +27,17 @@ namespace Produktpris
             Console.WriteLine("Du köpte " + quantity + " st " + product + ", totalpris (inkl. moms): " + totalPris + " kr");
 
 
+            double totalDefaultTax = CalculateTotal(product, price, quantity);
+            Console.WriteLine("Totalpris med default moms 25%: " + totalDefaultTax + " kr");
 
-            
+
+
+
 
 
         }
-                                                
-         static double CalculateTotal(string product, double price, int quantity, double tax = 0.25)
+
+        static double CalculateTotal(string product, double price, int quantity, double tax = 0.25)
         {
             double total = (price * quantity) * (1 + tax);
             return total;
